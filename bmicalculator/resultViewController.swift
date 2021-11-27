@@ -28,18 +28,16 @@ class resultViewController: UIViewController {
         } else if Float(bmiValue!)! < 24.9 {
             backgroundView.backgroundColor = UIColor.green
             return "Normal"
-
         } else {
             backgroundView.backgroundColor = UIColor.red
             return "High"
-
         }
     }
     
-    @IBAction func recalculatePressed(_ sender: UIButton) {
+    @IBAction func recalculate(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-
     }
+    
     
 
 }
